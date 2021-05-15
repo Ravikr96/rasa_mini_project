@@ -1,0 +1,218 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    
+- intent: enter_data
+  examples: |
+    - I am [Christina Sullivan](name)
+    - I am [Hattie Rice](name)
+    - I am [Robert Starks](name)
+    - I'm [Gladys Bynum](name)
+    - I'm [Harvey Cordano](name)
+    - I'm [Jeanine Hwang](name)
+    - I'm [Virginia Mason](name)
+    - My name is [Ashleigh Mees](name)
+    - My name is [chelsea Parker](name)
+    - My name is [jessie maglione](name)
+    - My name is [Kenneth Sherman](name)
+    - My name is [Lee George](name)
+    - My name is [Louise Caudill](name)
+    - My name is [Richard smith](name)
+    - My name is [Shane Goodyear](name)
+    - My name is [Sondra Boyd](name)
+    - My name si [tom Harbin](name)
+    - This is [Kim Vanderveen](name)
+    - This is [Norma Taylor](name)
+    - [Al Capone](name)
+    - [Elise](name)
+    - [Im Phyllis Howard](name)
+    - [Jamie Moore](name)
+    - [Jane Baines](name)
+    - [John Strickland](name)
+    - [Michele Perry](name)
+    - [Michelle Garcia](name)
+    - [Michelle Vinion](name)
+    - [Mr. Sweney](name)
+    - my name is [Alexander Kohn](name)
+    - my name is [betty mclendon](name)
+    - my name is [Brian Leung](name)
+    - my name is [Claude Ake](name)
+    - my name is [Earl Ring](name)
+    - my name is [Felicia Cosby](name)
+    - my name is [Frances Kunkle](name)
+    - my name is [Greg King](name)
+    - my name is [james culpit](name)
+    - my name is [Jermaine Mccleery](name)
+    - my name is [John Evers](name)
+    - my name is [Joseph Parson](name)
+    - my name is [Monica Ser](name)
+    - my name is [Nigel Partida](name)
+    - my name is [Staci Simpson](name)
+    - my name is [susan crandall](name)
+    - my name is [Tabitha Schoenthal](name)
+    - my name's [Michael Peppers](name)
+    - my name is [Ravi Kumar](name)  
+    - My name is [Ravi](name)  
+
+
+- intent: covid_stats_statewise
+  examples: |
+    - Tell me corona cases
+    - Tell me covid cases
+    - Tell me corona status
+    - Tell me corona stats
+    - Tell me covid stats
+    - [India](state)
+    - Tell me about cases in [India](state:India)
+    - Tell me about cases in [India](state:India)
+    - [Gujarat](state)
+    - Tell me about cases in [Gujarat](state:Gujarat)
+    - Tell me about cases in [Gujarat](state:Gujarat)
+    - [Andhra Pradesh](state)
+    - Tell me about cases in [Andhra Pradesh](state:Andhra Pradesh)
+    - Tell me about cases in [Andhra Pradesh](state:Andhra Pradesh)
+    - [Arunachal Pradesh](state)
+    - Tell me about cases in [Arunachal Pradesh](state:Arunachal Pradesh)
+    - Tell me about cases in [Arunachal Pradesh](state:Arunachal Pradesh)
+    - [Assam](state)
+    - Tell me about cases in [Assam](state:Assam)
+    - Tell me about cases in [India](state:India)
+    - Tell me about cases in [Bihar](state:Bihar)
+    - [Bihar](state)
+    - Tell me about cases [Bihar](state:Bihar)
+    - [Goa](state)
+    - Tell me about cases in [Goa](state:Goa)
+    - [Chhattisgarh](state)
+    - Tell me about cases in [Chhattisgarh](state:Chhattisgarh)
+    - [Haryana](state)
+    - Tell me about cases in [Haryana](state:Haryana)
+    - [Himachal Pradesh](state)
+    - Tell me about cases in [Himachal Pradesh](state:Himachal Pradesh)
+    - [Jharkhand](state)
+    - Tell me about cases in [Jharkhand](state:Jharkhand)
+    - [Karnataka](state)
+    - Tell me about cases in [Karnataka](state:Karnataka)
+    - [Madhya Pradesh](state)
+    - Tell me about cases in [Madhya Pradesh](state:Madhya Pradesh)
+    - [Kerala](state)
+    - Tell me about cases in [Kerala](state:Kerala)
+    - [Maharashtra](state)
+    - Tell me about cases in [Maharashtra](state:Maharashtra)
+    - [Manipur](state)
+    - Tell me about cases in [Manipur](state:Manipur)
+    - [Meghalaya](state)
+    - Tell me about cases in [Meghalaya](state:Meghalaya)
+    - [Mizoram](state)
+    - Tell me about cases in [Mizoram](state:Mizoram)
+    - [Nagaland](state)
+    - Tell me about cases in [Nagaland](state:Nagaland)
+    - [Odisha](state)
+    - Tell me about cases in [Odisha](state:Odisha)
+    - [Punjab](state)
+    - Tell me about cases in [Punjab](state:Punjab)
+    - [Rajasthan](state)
+    - Tell me about cases in [Rajasthan](state:Rajasthan)
+    - [Sikkim](state)
+    - Tell me about cases in [Sikkim](state:Sikkim)
+    - [Tamil Nadu](state)
+    - Tell me about cases in [Tamil Nadu](state:Tamil Nadu)
+    - [Telangana](state)
+    - Tell me about cases in [Telangana](state:Telangana)
+    - [Tripura](state)
+    - Tell me about cases in [Tripura](state:Tripura)
+    - [Uttar Pradesh](state)
+    - Tell me about cases in [Uttar Pradesh](state:Uttar Pradesh)
+    - [Uttarakhand](state)
+    - Tell me about cases in [Uttarakhand](state:Uttarakhand)
+    - [West Bengal](state)
+    - Tell me about cases in [West Bengal](state:West Bengal)
+    - [Delhi](state)
+    - Tell me about cases in [Delhi](state:Delhi)

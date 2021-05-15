@@ -1,0 +1,24 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: action_greet_user
+  - intent: enter_data
+  - action: action_greet
+
+- story: happy path02
+  steps:
+  - intent: greet
+  - action: action_greet_user
+  - intent: covid_stats_statewise
+  - action: actions_corona_state_stat  
+
+- story: corona tracker path
+  steps:
+  - intent: covid_stats_statewise
+  - action: actions_corona_state_stat
+
+  
